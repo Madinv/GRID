@@ -31,14 +31,17 @@
   align-self: center;
 }
 
-.menu ul,
 .menu li {
+  font-size: 16px;
+  display: grid;
+}
+.menu ul
+{
   font-size: 16px;
   display: grid;
   justify-content: center;
   align-self: center;
   grid-template-columns: repeat(4, 1fr);
-  border: 1px solid salmon;
   gap: 15px;
 }
 
@@ -49,8 +52,6 @@
   grid-template-rows: repeat(4,1fr);
   grid-row: 2/5;
   grid-column: 1/1;
-  
- 
 }
 
 .sidebar .photo {
@@ -64,7 +65,6 @@
  
 }
 
-
 .sidebar .side-content {
   background-color: white;
   color: black;
@@ -77,21 +77,21 @@
 .nav {
   background-color: #C50208;
   display: grid;
-  grid-row: 2/2;
   grid-column: 2/5;
-  border: 5px solid black;
-  gap: 15px;
-  justify-items: stretch;
-  align-items: stretch;
-  grid-template-columns: 1fr 1fr 1fr;
+  
 }
 
 .nav ul li {
   font-size: 16px;
   text-transform: uppercase;
-  display: grid;
-  border: 1px solid white;
+}
 
+.nav ul {
+  font-size: 16px;
+  text-transform: uppercase;
+  display: grid;
+  list-style-type:none;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .article {
